@@ -1,0 +1,104 @@
+$white-color: #FFFFFF;
+$black-color: #000000;
+$green-color-theme: #198754;
+$red-color-theme: #DC3545;
+$yellow-color-theme: #FFC107;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white-color;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    & .firstWrapper {
+        width: 350px;
+        height: 350px;
+        border: 2px solid $red-color-theme;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 100px;
+
+        & .first-player-title {
+            font-family: Verdana;
+            font-size: 32px;
+            color: $red-color-theme;
+        }
+
+        & .increment-first-score {
+            width: 100px;
+            margin-top: 20px;
+        }
+
+        & .lock-first-score {
+            width: 120px;
+            margin-top: 20px;
+        }
+    }
+
+    & .secondWrapper {
+        width: 400px;
+        height: 350px;
+        border: 4px solid $yellow-color-theme;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 100px;
+
+        & .rolled-title {
+            font-family: Verdana;
+            font-size: 32px;
+            color: $black-color;
+        }
+
+        & .reset-button {
+            margin-top: 75px;
+        }
+
+        & .new-game-button {
+            margin-top: 75px;
+        }
+    }
+
+    & .thirdWrapper {
+        width: 350px;
+        height: 350px;
+        border: 2px solid $green-color-theme;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 100px;
+
+        & .second-player-title {
+            font-family: Verdana;
+            font-size: 32px;
+            color: $green-color-theme;
+        }
+
+        & .increment-second-score {
+            width: 100px;
+            margin-top: 20px;
+        }
+
+        & .lock-second-score {
+            width: 120px;
+            margin-top: 20px;
+        }
+    }
+    
+    & .table {
+        margin-top: 50px;
+    }
+}
+
+.clear-data {
+    position: absolute;
+    top: 450px;
+    left: 320px;
+}
